@@ -35,3 +35,7 @@ I then created descriptive, labeled names for each, saved the list in a CSV file
 
 Section 5: Create a Second, Independent Data Set, that is Tidy, with the Average of Each Variable for Each Activity and Each Subject
 
+I started by grouping the data set created above by both Subject and Activity (in that order). Once grouped I used the summarize_all function to calculate the mean for each grouping. Once summarized I used as.data.frame to put it together in an easy to read format.
+
+Thank you for your help with reviewing this assignment! I am interested to see what feedback I get!
+
