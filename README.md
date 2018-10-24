@@ -28,4 +28,10 @@ I leveraged the activity_labels text file in the directory to extract the names 
 
 Section 4: Appropriately Label the Data Set with Descriptive Variable Names
 
+For this section I leveraged the README and features_info files from the dataset. Based on the features information I segmented the measurements into two categories - Time measurements and Frequency measurements. Therefore, what I ended up with was two "sections" of labels, one labeled Time and one labeled Frequency. Each measurement from Body Acceleration to Body Gyro Jerk was taken from three axes so we have three columns (X, Y, Z axes) for each of these measurement (this is duplicated with the Frequency calculations). We also had individual measurements for Magnitude of the three axes together (also duplicated time and frequency). Lastly, I left the five individual mean measuremtns as this would give a good summary picture.
+
+I then created descriptive, labeled names for each, saved the list in a CSV file, read the CSV into R and applied the list to column names using the colnames function. Lastly, I added the Subject and Activity names to the appropriate columns.
+
+
+Section 5: Create a Second, Independent Data Set, that is Tidy, with the Average of Each Variable for Each Activity and Each Subject
 
